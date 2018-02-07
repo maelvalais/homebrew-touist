@@ -7,6 +7,11 @@ class Touist < Formula
   # We use the git history for `git describe --tags`, so no shallow clone
 
   bottle do
+    root_url "https://dl.bintray.com/touist/bottles-touist"
+    cellar :any_skip_relocation
+    sha256 "bd30041c2cc3f05825c595836406e6f30111c5aa4ed94f82cd7dafe34b28eea1" => :high_sierra
+    sha256 "bd30041c2cc3f05825c595836406e6f30111c5aa4ed94f82cd7dafe34b28eea1" => :sierra
+    sha256 "200d8493e28ac013642ab4ea563f76ec7cc4a3c365aeae7d3229861b3f8aaa46" => :el_capitan
   end
 
   option "without-gmp", "Build without gmp which disables the yices2 support"
